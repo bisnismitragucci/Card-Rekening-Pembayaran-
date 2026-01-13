@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -20,7 +19,7 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
     
@@ -36,7 +35,6 @@
       background: linear-gradient(135deg, #ffffff 0%, #f7f3e8 100%);
       position: relative;
       overflow: hidden;
-      box-shadow: 0 60px 120px -20px rgba(0,0,0,0.6);
     }
 
     .gold-shimmer {
@@ -76,8 +74,10 @@
     .custom-scrollbar::-webkit-scrollbar-track { background: #111; }
     .custom-scrollbar::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
 
-    .gold-border {
-      border: 1px solid rgba(212, 175, 55, 0.3);
+    #root {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
   </style>
 <script type="importmap">
@@ -94,7 +94,6 @@
 </head>
 <body>
   <div id="root"></div>
-  <!-- Entry point aplikasi untuk Vite/Vercel -->
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
