@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gucci Private Settlement - Bank Indonesia Authorized</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gucci-green: #004526;
+      --gucci-red: #A50016;
+      --gold-primary: #D4AF37;
+      --gold-dark: #AA771C;
+    }
+    
+    body {
+      background-color: #0c0c0c;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .font-luxury { font-family: 'Playfair Display', serif; }
+    .font-heritage { font-family: 'Cinzel', serif; }
+    
+    .gucci-pattern {
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      opacity: 0.04;
+    }
+
+    .luxury-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f7f3e8 100%);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 60px 120px -20px rgba(0,0,0,0.6);
+    }
+
+    .gold-shimmer {
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      width: 300%;
+      height: 300%;
+      background: linear-gradient(
+        45deg,
+        rgba(212,175,55,0) 0%,
+        rgba(212,175,55,0) 45%,
+        rgba(212,175,55,0.12) 50%,
+        rgba(212,175,55,0) 55%,
+        rgba(212,175,55,0) 100%
+      );
+      animation: shimmer-move 15s infinite linear;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    @keyframes shimmer-move {
+      0% { transform: translate(-20%, -20%); }
+      100% { transform: translate(20%, 20%); }
+    }
+
+    .gucci-stripe {
+      background: linear-gradient(to right, #004526 33.33%, #A50016 33.33%, #A50016 66.66%, #004526 66.66%);
+    }
+
+    .bi-seal {
+      background: radial-gradient(circle at center, #D4AF37 0%, #AA771C 100%);
+      box-shadow: inset 0 0 15px rgba(0,0,0,0.2), 0 8px 25px rgba(212,175,55,0.4);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #111; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+    .gold-border {
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+  <!-- Entry point aplikasi untuk Vite/Vercel -->
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
