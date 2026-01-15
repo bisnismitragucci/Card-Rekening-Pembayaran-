@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const BANK_LOGOS: Record<string, string> = {
@@ -18,10 +17,10 @@ export const BANK_FULL_NAMES: Record<string, string> = {
 };
 
 export const INITIAL_DATA = {
-  bankName: 'BRI',
-  accountName: 'NAS',
-  accountNumber: '1986969259',
-  amount: '5000000',
+  bankName: 'BNI',
+  accountName: 'IMAN HADI KESUMA',
+  accountNumber: '1988015880',
+  amount: '100000',
   companyName: 'PT. Graha Citra Prima',
   websiteUrl: 'https://gconline.online'
 };
