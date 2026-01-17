@@ -95,7 +95,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({ data, docId }) => {
             </div>
           </div>
 
-          {/* ACCOUNT NUMBER */}
+          {/* ACCOUNT NUMBER - Adjusted font size for 15 digits */}
           <div className="relative">
             <div className="text-center mb-2">
               <span className="text-[9px] font-black text-[#A50016] tracking-[0.8em] uppercase italic opacity-60">NOMOR REKENING PEMBAYARAN</span>
@@ -110,7 +110,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({ data, docId }) => {
               <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#D4AF37]/40"></div>
               <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#D4AF37]/40"></div>
               
-              <h2 className="text-[32px] font-bold tracking-[0.25em] text-white leading-none tabular-nums text-center relative z-10 drop-shadow-[0_4px_4px_rgba(0,0,0,0.6)] font-heritage break-all">
+              <h2 className="text-[30px] font-bold tracking-[0.25em] text-white leading-none tabular-nums text-center relative z-10 drop-shadow-[0_4px_4px_rgba(0,0,0,0.6)] font-heritage break-all">
                  {data.accountNumber.match(/.{1,4}/g)?.join(' ') || data.accountNumber}
               </h2>
               
@@ -120,7 +120,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({ data, docId }) => {
             </div>
           </div>
 
-          {/* DETAILS - ADAPTIVE FOR LONG NAMES */}
+          {/* DETAILS */}
           <div className="grid grid-cols-2 gap-6">
              <div className="border border-[#1a1a1a]/10 p-5 bg-[#f9f9f9] shadow-inner relative overflow-hidden flex flex-col justify-center">
                <div className="absolute top-0 left-0 w-1.5 h-full bg-[#A50016]"></div>
@@ -138,7 +138,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({ data, docId }) => {
           </div>
         </div>
 
-        {/* BANK INDONESIA OVERSIGHT - NO OVERLAP FIX */}
+        {/* BANK INDONESIA OVERSIGHT */}
         <div className="mt-8 flex items-center gap-6 bg-[#fdfbf7] border border-[#D4AF37]/30 p-4 relative overflow-hidden shadow-xl ring-1 ring-black/5">
           <div className="flex-shrink-0 flex flex-col items-center relative z-10">
              <div className="bi-seal w-20 h-20 rounded-full flex items-center justify-center border-[3px] border-[#D4AF37] p-3 mb-2 shadow-lg bg-white overflow-hidden">

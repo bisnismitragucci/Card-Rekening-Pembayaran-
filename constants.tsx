@@ -17,9 +17,9 @@ export const BANK_FULL_NAMES: Record<string, string> = {
 };
 
 export const INITIAL_DATA = {
-  bankName: 'BNI',
-  accountName: 'IMAN HADI KESUMA',
-  accountNumber: '1988015880',
+  bankName: 'BRI',
+  accountName: 'VANI ANGGA KESUMA',
+  accountNumber: '335301013647506',
   amount: '100000',
   companyName: 'PT. Graha Citra Prima',
   websiteUrl: 'https://gconline.online'
